@@ -18,22 +18,16 @@ for (let i = 1; i<=clientes ; i++){
 
         alert("Aplica prestamo");
 
-        let entrada = prompt ("Cree su contraseña")
+        function suma (sueldo1, sueldo2){
+                return sueldo1 + sueldo2
+        }
+
+        let resultado = suma (sueldo1, sueldo2);
+        alert ("este es su prestamo " +  resultado);
 
         
 
-                while (entrada != "pato"){
-
-            
-                        alert ("dato incorrecto");
-                        entrada = prompt ("ingresar contraseña para continuar");
-                        if ("pato" === "pato");
-            
-          
-    
-                }
-
-                break
+               
 
         }
 
