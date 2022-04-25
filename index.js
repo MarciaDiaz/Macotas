@@ -16,14 +16,14 @@ for (let i = 1; i<=clientes ; i++){
 
     if (promediosueldos > 1000) {
 
-        alert("Aplica prestamo");
+        alert("Aplica prestamo!");
 
         function suma (sueldo1, sueldo2){
                 return sueldo1 + sueldo2
         }
 
         let resultado = suma (sueldo1, sueldo2);
-        alert ("este es su prestamo " +  resultado);
+        alert ("Su prestamo es de " +  resultado);
 
         
 
