@@ -2,12 +2,12 @@ let clientes=3;
 
 for (let i = 1; i<=clientes ; i++){
 
-    let nombre = prompt ("ingrese su nombre")
+    let nombre = prompt ("ingrese su nombre");
 
-    alert ("su turno es el numero " + i)
+    alert ("su turno es el numero " + i);
 
-    let sueldo1 = parseInt (prompt("Hola " + nombre + " ingrese promedio sueldo 2021"))
-    let sueldo2 = parseInt (prompt("ingrese sueldo promedio 2022"))
+    let sueldo1 = parseInt (prompt("Hola " + nombre + " ingrese promedio sueldo 2021"));
+    let sueldo2 = parseInt (prompt("ingrese sueldo promedio 2022"));
 
     let promediosueldos = (sueldo1 + sueldo2)/2;
 
