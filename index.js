@@ -1,40 +1,47 @@
-let clientes=3;
+/*lista de productos*/
+const productos = [
+        {id: 1, producto: "motosierra", precio: 17000},
+        {id: 2, producto: "amoladora", precio: 5000},
+        {id: 3, producto: "Agujereadora", precio: 8000}
+];
 
-for (let i = 1; i<=clientes ; i++){
+console.log (productos);
 
-    let nombre = prompt ("ingrese su nombre");
+/*agregar un producto a la lista*/
 
-    alert ("su turno es el numero " + i);
+productos.push  ({id: 4, producto: "Sierra circular", precio: 18000});
 
-    let sueldo1 = parseInt (prompt("Hola " + nombre + " ingrese promedio sueldo 2021"));
-    let sueldo2 = parseInt (prompt("ingrese sueldo promedio 2022"));
+console.log (productos);
 
-    let promediosueldos = (sueldo1 + sueldo2)/2;
-
-   
-       
-
-    if (promediosueldos > 1000) {
-
-        alert("Aplica prestamo!");
-
-        function suma (sueldo1, sueldo2){
-                return sueldo1 + sueldo2
-        }
-
-        let resultado = suma (sueldo1, sueldo2);
-        alert ("Su prestamo es de " +  resultado);
-
-        
-
-               
-
-        }
-
-        else if (promediosueldos < 1000){
-        alert("no aplica prestamo");
-        }
-
-          
-    
+/*mostrar solo el producto y su precio*/
+for (const producto of productos){
+        console.log(producto.id)
+        console.log (producto.producto)
+        console.log (producto.precio)
 }
+
+/* muestro las herramientas con el valor del envio*/
+
+class herramienta {
+        constructor (nombre, precio) {
+                this.nombre = nombre.toUpperCase();
+                this.precio = parseFloat(precio);
+                this.vendido = false;
+        }
+
+
+mostrarPrecioEnvio(){
+console.log(this.precio +(this.precio + 500));
+}
+}
+
+const herramientas = [] ;
+herramientas.push(new herramienta ("AMOLADORA", "15000"))
+herramientas.push(new herramienta ("SIERRA CIRCULAR", "17000"))
+herramientas.push(new herramienta ("AGUJEREADORA", "8000"))
+
+for (const herramienta of herramientas){
+        herramienta.mostrarPrecioEnvio();
+}
+
+
