@@ -18,7 +18,7 @@ const arrayProductos = [];
 arrayProductos.push(new Producto(1, "Sierra", 8000));
 arrayProductos.push(new Producto(2, "Hidrolavadora", 17000));
 arrayProductos.push(new Producto(3, "Taladro", 6500));
-arrayProductos.push(new Producto(4, "PPinza Amperometrica", 5400));
+arrayProductos.push(new Producto(4, "Pinza Amperometrica", 5400));
 arrayProductos.push(new Producto(5, "Agujereadora", 13000));
 arrayProductos.push(new Producto(6, "Soldadora", 19000));
 arrayProductos.push(new Producto(7, "Atornilladora", 12000));
