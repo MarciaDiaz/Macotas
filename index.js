@@ -1,47 +1,55 @@
-/*lista de productos*/
-const productos = [
-        {id: 1, producto: "motosierra", precio: 17000},
-        {id: 2, producto: "amoladora", precio: 5000},
-        {id: 3, producto: "Agujereadora", precio: 8000}
-];
 
-console.log (productos);
 
-/*agregar un producto a la lista*/
+class Producto {
+    
+    constructor(id, nombre, precio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
 
-productos.push  ({id: 4, producto: "Sierra circular", precio: 18000});
+    toString() {
+        return `${this.id}. ${this.nombre}, ${this.precio} $`;
+    }
+} 
 
-console.log (productos);
+const arrayProductos = [];
 
-/*mostrar solo el producto y su precio*/
-for (const producto of productos){
-        console.log(producto.id)
-        console.log (producto.producto)
-        console.log (producto.precio)
+arrayProductos.push(new Producto(1, "Sierra", 8000));
+arrayProductos.push(new Producto(2, "Hidrolavadora", 17000));
+arrayProductos.push(new Producto(3, "Taladro", 6500));
+arrayProductos.push(new Producto(4, "PPinza Amperometrica", 5400));
+arrayProductos.push(new Producto(5, "Agujereadora", 13000));
+arrayProductos.push(new Producto(6, "Soldadora", 19000));
+arrayProductos.push(new Producto(7, "Atornilladora", 12000));
+
+const mensaje = (listaProductos) => {
+    let auxMensaje = [];
+    auxMensaje.push("Elija el producto que quiera comprar: ");
+    for (let i = 0; i < listaProductos.length; i++){
+        auxMensaje.push(listaProductos[i].toString());
+    }
+    auxMensaje.push("Para finalizar su selección ingrese 0.");
+    return auxMensaje.join("\n");
 }
 
-/* muestro las herramientas con el valor del envio*/
+let elegirProductos; 
+let buscarProducto;
+const carrito = [];
+let precio = 0;
 
-class herramienta {
-        constructor (nombre, precio) {
-                this.nombre = nombre.toUpperCase();
-                this.precio = parseFloat(precio);
-                this.vendido = false;
-        }
+// Ejecución
+elegirProductos = parseInt(prompt(mensaje(arrayProductos)));
 
-
-mostrarPrecioEnvio(){
-console.log(this.precio +(this.precio + 500));
-}
-}
-
-const herramientas = [] ;
-herramientas.push(new herramienta ("AMOLADORA", "15000"))
-herramientas.push(new herramienta ("SIERRA CIRCULAR", "17000"))
-herramientas.push(new herramienta ("AGUJEREADORA", "8000"))
-
-for (const herramienta of herramientas){
-        herramienta.mostrarPrecioEnvio();
+while ((elegirProductos > 0) && (elegirProductos <= arrayProductos.length) && (!isNaN(elegirProductos))) {
+    buscarProducto = arrayProductos.find((el) => el.id === elegirProductos);
+    carrito.push(buscarProducto);
+    elegirProductos = parseInt(prompt(mensaje(arrayProductos)));
 }
 
-
+if (carrito.length > 0) {
+    carrito.forEach((el) => (precio += el.precio));
+    alert(`Usted seleccionó:\n${carrito.join("\n")}\nEl total a abonar es: ${precio} $`);
+} else {
+    alert("¡Que pena, no seleccionaste nada!");
+}
