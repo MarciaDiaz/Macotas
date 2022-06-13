@@ -1,10 +1,8 @@
 
-   alert ("Bienvenido a veterinaria online")
-
-  
-   
-
 for (let i=1 ; i<6 ; i++){
+
+    alert ("Bienvenido a veterinaria online")
+
     let nombre = prompt ("Ingrese su nombre");
  
 alert ( "Hola " + nombre + " su turno es el numero: " + i)
