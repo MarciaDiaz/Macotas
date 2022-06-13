@@ -1,0 +1,32 @@
+nav{
+    background-color: wheat;
+    color: black;
+    font-size: x-large;
+}
+h1{
+    text-align: center;
+   
+    padding: 100px;
+}
+.pestanas{
+    color: orangered;
+    padding: 20px;
+}
+
+.buscador{
+    text-align: center;
+    
+    padding: 30px;
+}
+img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.prod-container {
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 2rem;
+    margin: 2rem;
+}

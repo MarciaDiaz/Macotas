@@ -1,43 +1,28 @@
-document.getElementById("nombre").value="buscador";
 
-let boton=document.getElementById("btnPrincipal");
- boton.addEventListener("click", respuestaClick);
- function respuestaClick (){
-     console.log ("respuestClick")
+for (let i=1 ; i<6 ; i++){
+
+    alert ("Bienvenido a veterinaria online")
+
+let nombre = prompt ("Ingrese su nombre");
+
+alert ( "Hola " + nombre + " su turno es el numero: " + i)
+
+let mascota = prompt ("Ingrese mascota" + "\n" + "1- Gato" + "\n" +  "2-Perro" + "\n" + "3-Ninguna de las anteriores");
 
 
 
-     
- }
+    if ( mascota == 1){
 
- 
-const contenedor = document.getElementById ("productos")
-
-const productos = [
-
-    {id: 1, nombre: "herramienta1", precio: 100, imagen:"https://img.toolstud.io/240x240/3b5998/fff&text=+200x200+"},
-    {id: 2, nombre: "herramienta2", precio: 110, imagen:"https://img.toolstud.io/240x240/3b5998/fff&text=+200x200+" },
-    {id: 3, nombre: "herramienta3", precio: 150, imagen:"https://img.toolstud.io/240x240/3b5998/fff&text=+200x200+"},
-    {id: 4, nombre: "herramienta4", precio: 200, imagen:"https://img.toolstud.io/240x240/3b5998/fff&text=+200x200+"},]
-
-    const getCard = (item) => {
-        return ( ` <div class="card" style="width: 18rem;">
-        <img src=" ${item.imagen}" class="card-img-top" alt=" ${item.nombre}">
-        <div class="card-body">
-          <h5 class="card-title"=>${item.nombre}</h5>
-          <p class="card-text">$${item.precio}</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
-      </div>`)
+   alert ("Su mascota sera atendido por especialistas en michis")
     }
- 
-    const cargarProductos = (datos, nodo) => {
-        let acumulador = "";
-        datos.forEach ((el) =>{
-            acumulador += getCard (el);
-        })
-        nodo.innerHTML =acumulador;
+    else if (mascota == 2){
+    alert ("Su mascota sera atendida por especialista en perritos")
     }
-
-    cargarProductos(productos, contenedor);
-   
+    else if (mascota == 3) {
+    alert ("Sera derivado con una veterianaria de exoticos")
+    }
+    else{
+    alert ("la opcion no es valida intentelo nuevamente")
+    break
+    }
+}
