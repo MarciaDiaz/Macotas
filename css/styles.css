@@ -1,13 +1,38 @@
 nav{
-    background-color: wheat;
+    background-image: url(../imagenes/huellas\ perro.png);
     color: black;
     font-size: x-large;
+   
+    padding: 50px;
 }
+
+footer{
+    background-image: url(../imagenes/huellas\ perro.png);
+    color: black;
+    font-size: x-large;
+    padding: 50px;
+}
+
+body{
+    height: 900px;
+   
+    
+}
+
 h1{
     text-align: center;
-   
-    padding: 100px;
+    color: goldenrod;
+    
+    padding: 50px;    
 }
+
+h2{
+    color: black;
+    background-color: goldenrod; 
+    width: 500px;
+    text-align: center;
+}
+
 .pestanas{
     color: orangered;
     padding: 20px;
@@ -18,10 +43,16 @@ h1{
     
     padding: 30px;
 }
-img {
-    width: 10rem;
-    height: 10rem;
+
+
+.principal {
+ 
+    display: flex;
+   justify-content: center;
+  
+   
 }
+
 
 .prod-container {
     text-align: center;
