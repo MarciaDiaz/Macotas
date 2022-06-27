@@ -122,13 +122,13 @@ function productos (producto){
 //FUNCION COMPRAR
 
 function comprar (){
-    let opcion = 11;
+    let opcion = 5;
 
 
 
 //BUCLE DE OPCIONES DE PRODUCTOS
 
-    while (opcion == 11){
+    while (opcion == 5){
 
         iva_precios(suma_total);
         parseInt(iva_precios);
