@@ -1,85 +1,73 @@
-   class Animales_veterinaria {
+class Animales_veterinaria {
 
-        constructor(nombre, apellido, edad){
-    
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.edad = edad;
-            this.peso;
-            
-    
-        }
-    
-    
-        saludar (){
-            console.log ("hola mi nombre es: ", this.nombre)
-        }
-    
-        get_datos(){
-            console.log ("--DATOS DE ANIMALES--");
-            console.log ("nombre: ", this.nombre);
-            console.log ("apellido: ", this.apellido);
-            console.log ("edad: ", this.edad);
-        }
-    
-        set_peso(su_dosis){
-
-        this.peso = su_dosis;
-        
-        }
-
-    
-    
+    constructor (nombre, apellido, edad, peso){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.peso= peso;
     }
-    
-        let animal_uno = new Animales_veterinaria ("peca", "perrito", 2);
-        let animal_dos = new Animales_veterinaria ("zeta", "perrote", 3);
 
-   
-    let peso = parseInt(prompt("ingrese el peso de su perro",));
-    
-   
+    saludar (){
+        console.log ("hola mi nombre es: ", this.nombre)
+    }
 
-    animal_uno.set_peso(peso);
-    animal_dos.set_peso(peso);
-   
-    
-    
-    animal_dos.get_datos();
-    animal_uno.get_datos()
-    
-    
+    get_datos(){
+        console.log ("--DATOS DE ANIMALES--");
+        console.log ("nombre: ", this.nombre);
+        console.log ("apellido: ", this.apellido);
+        console.log ("edad: ", this.edad);
+        console.log("peso", this.peso);
+    }
 
-    animal_dos.set_peso();
+    set_peso(su_dosis){
+        this.peso = su_dosis;
+    }
+}
 
 
-    function calcular_dosis (peso){
-        // retorna dosis
-        
-        let dosis = peso * 0.25;
-        return dosis
-        }
+//ARRAY DE MASCOTAS
 
-        let su_dosis = calcular_dosis(peso);
+let mascotas = []
 
-        console.log("su dosis es: ", su_dosis);
+mascotas.push(new Animales_veterinaria("peca","perrito", 2, 20));
+mascotas.push(new Animales_veterinaria("zeta","perrote", 3, 15));
+
+console.log(mascotas);
 
 
-       
-//FIND
 
 
-let mascotas = [
 
-    {nombre: "simon", apellido: "Mataderos", edad: 1},
-    {nombre: "pirata", apellido: "Guillon", edad:4},
-    {nombre:"cebra", apellido: "calle", edad: 4},
-]
-        function buscar_nombre (mascota){
 
-            return mascota == "cebra";
-        }
 
-        mascotas.find()
+mascotas[0].get_datos();
+
+
+
+
+mascotas[1].get_datos();
+
+
+
+
+
+function calcular_dosis (mascotas){
+    // retorna dosis
+    let dosis = mascotas.peso * 0.25;
+    return {
+        peso: mascotas.peso,
+        dosis: dosis,
+    }
+}
+
+
+
+
+let mascotas_dosis = mascotas.map(calcular_dosis);
+
+console.log(mascotas);
+console.log(mascotas_dosis);
+
+
 
 
