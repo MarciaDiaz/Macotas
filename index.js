@@ -123,17 +123,6 @@ function agregar_producto (){
     lista.append(li);
 }
 
-function quitar_producto (){
-
-    let producto_usuario = document.getElementById("producto");
-    let lista = document.getElementById("lista");
-
-    let li = document.createElement("li");
-
-    li.innerHTML = producto_usuario.value
-
-    lista.remove(li);
-}
 
 
 
