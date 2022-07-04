@@ -1,5 +1,5 @@
 nav{
-    background-image: url(../imagenes/huellas\ perro.png);
+    background-image: url(../img/huellas\ perro.png);
     color: black;
     font-size: x-large;
    
@@ -7,7 +7,7 @@ nav{
 }
 
 footer{
-    background-image: url(../imagenes/huellas\ perro.png);
+    background-image: url(../img/huellas\ perro.png);
     color: black;
     font-size: x-large;
     padding: 50px;
@@ -29,7 +29,7 @@ h1{
 h2{
     color: black;
     background-color: goldenrod; 
-    width: 500px;
+    width: 200px;
     text-align: center;
 }
 
@@ -53,6 +53,13 @@ h2{
    
 }
 
+.principal img{
+
+    width: auto;
+    height: auto;
+
+}
+
 
 .prod-container {
     text-align: center;
@@ -61,3 +68,10 @@ h2{
     padding: 2rem;
     margin: 2rem;
 }
+
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
+

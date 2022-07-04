@@ -32,23 +32,12 @@ let mascotas = []
 mascotas.push(new Animales_veterinaria("peca","perrito", 2, 20));
 mascotas.push(new Animales_veterinaria("zeta","perrote", 3, 15));
 
+
 console.log(mascotas);
 
 
-
-
-
-
-
 mascotas[0].get_datos();
-
-
-
-
 mascotas[1].get_datos();
-
-
-
 
 
 function calcular_dosis (mascotas){
@@ -67,7 +56,5 @@ let mascotas_dosis = mascotas.map(calcular_dosis);
 
 console.log(mascotas);
 console.log(mascotas_dosis);
-
-
 
 
