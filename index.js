@@ -1,27 +1,27 @@
 
-function agregar_producto (){
+let nombre_usuario = document.getElementById("nombre_usuario");
 
-    let producto_usuario = document.getElementById("producto");
-    let lista = document.getElementById("lista");
 
-    let li = document.createElement("li");
+nombre_usuario.addEventListener("change", function(e){
 
-    li.innerHTML = producto_usuario.value
+    console.log(e.target.value);
 
-    lista.append(li);
-}
+    if(e.target.value !=="PEPE"){
+        let contenedor = document.getElementById("contenedor");
+        let mensaje = document.createElement("p");
+        mensaje.innerText = "Bienvenido a la veterinaria";
+        contenedor.append(mensaje)
+    }
+    else{
+        let mensaje = document.createElement("p");
+        mensaje.innerText = "Usuario no deseado!";
+        contenedor.append(mensaje)
+    }
+})
 
-function quitar_producto (){
+contenedor.remove(div);
 
-    let producto_usuario = document.getElementById("producto");
-    let lista = document.getElementById("lista");
 
-    let li = document.createElement("li");
-
-    li.innerHTML = producto_usuario.value
-
-    lista.remove(li);
-}
 
 //////////////////////////////////////////////////////
 
@@ -63,6 +63,7 @@ const mostrarProductos = () => {
 }
 
 
+
 /*
 Mediante el objeto "e" detecta si se hizo click en un elemento que en su lista de clases
 contenga la clase "agregar".
@@ -95,6 +96,9 @@ const mostrarCarrito = () => {
 }
 
 
+
+
+
 /*
 El evento DOMContentLoaded se ejecuta al iniciar la aplicación,
 y ejecuta la función mostrarProductos para que se vean por pantalla
@@ -108,20 +112,9 @@ botones de los productos.
 */
 
 contenedorProductos.addEventListener('click', agregarAlCarrito);
-contenedorProductos.addEventListener('click', borrarCarrito);
 
 
-function agregar_producto (){
 
-    let producto_usuario = document.getElementById("producto");
-    let lista = document.getElementById("lista");
-
-    let li = document.createElement("li");
-
-    li.innerHTML = producto_usuario.value
-
-    lista.append(li);
-}
 
 
 
