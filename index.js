@@ -1,29 +1,6 @@
 
-let nombre_usuario = document.getElementById("nombre_usuario");
 
 
-nombre_usuario.addEventListener("change", function(e){
-
-    console.log(e.target.value);
-
-    if(e.target.value !=="PEPE"){
-        let contenedor = document.getElementById("contenedor");
-        let mensaje = document.createElement("p");
-        mensaje.innerText = "Bienvenido a la veterinaria";
-        contenedor.append(mensaje)
-    }
-    else{
-        let mensaje = document.createElement("p");
-        mensaje.innerText = "Usuario no deseado!";
-        contenedor.append(mensaje)
-    }
-})
-
-contenedor.remove(div);
-
-
-
-//////////////////////////////////////////////////////
 
 
 
@@ -115,6 +92,28 @@ contenedorProductos.addEventListener('click', agregarAlCarrito);
 
 
 
+
+let nombre_usuario = document.getElementById("nombre_usuario");
+
+
+nombre_usuario.addEventListener("change", function(e){
+
+    console.log(e.target.value);
+
+    if(e.target.value !=="PEPE"){
+        let contenedor = document.getElementById("contenedor");
+        let mensaje = document.createElement("p");
+        mensaje.innerText = "Bienvenido a la veterinaria";
+        contenedor.append(mensaje)
+    }
+    else{
+        let mensaje = document.createElement("p");
+        mensaje.innerText = "Usuario no deseado!";
+        contenedor.append(mensaje)
+    }
+})
+
+contenedor.remove(div);
 
 
 
