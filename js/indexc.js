@@ -1,10 +1,9 @@
 let botones_compra = document.querySelectorAll(".botonCompra");
-
+let carrito = [];
 let carrito_storage = [];
 
-const botonVaciar = document.getElementById('vaciar-carrito')
 
-let carrito = [];
+
 
 for (let boton of botones_compra){
     boton.addEventListener("click", agregar_carrito);
@@ -79,40 +78,17 @@ function borrar_producto(e){
     abuelo.remove();
 }
 
-
-    
+ 
+updateShoppingCartTotal();
 }
 
-/*VACIAR CARRITO*/
+function updateShoppingCartTotal (){
 
-botonVaciar.addEventListener('click', () => {
-    carrito.length = 0
-    actualizarCarrito()
-});
-
-/* ACTUALIZAR CARRITO*/
-const actualizarCarrito = () => {
-    contenedorCarrito.innerHTML = ""
-    carrito.forEach((info) => {
-        const div = document.createElement('div')
-        div.className = ('productoEnCarrito')
-        div.innerHTML = `
-        <p>${info.nombre}</p>
-        <p>Precio:$${info.precio}</p>
-        <p>Cantidad: <span id="cantidad">${info.cantidad}</span></p>
-        <button onclick="eliminarDelCarrito(${info.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
-        `
-
-        contenedorCarrito.appendChild(div)
-
-    })
+    let total = 0;
+    const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
+   const shoppingCartItem = document.querySelectorAll ('.shoppingCartItem');
+   console.log(shoppingCartItem);
     
-    contadorCarrito.innerText = carrito.length
-
-    console.log(carrito)
-    precioTotal.innerText = carrito.reduce((acc, info) => acc + info.cantidad * info.precio, 0)
-  
-};
-
+}
 
 

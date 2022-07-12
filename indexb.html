@@ -48,14 +48,14 @@
 <div id="contenedorPadre">      
   <div class="container" id="listaProductos">
     <h2>Productos</h2>
-    <div class="row">
+    <div class="row shoppingCartItem">
       <div class="col">
         <div class="card" style="width: 90%;">
             <img src="./img/equilibrio.png" class="card-img-top alimento-img" alt="...">
             <div class="card-body">
               <h5 class="card-title">Alimento1</h5>
               <p class="card-text"></p>
-              <span class="precio">500$</span>  
+              <span class="precio shoppingCartItemPrice">500$</span>  
               <a href="#" class="btn btn-primary botonCompra">Comprar</a>
             </div>
           </div>
@@ -66,7 +66,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Alimento2</h5>
                   <p class="card-text"></p>
-                  <span class="precio">550$</span>  
+                  <span class="precio shoppingCartItemPrice">550$</span>  
                   <a href="#" class="btn btn-primary botonCompra">Comprar</a>
                 </div>
               </div>
@@ -77,21 +77,21 @@
                 <div class="card-body">
                   <h5 class="card-title">Alimento3</h5>
                   <p class="card-text"></p>
-                  <span class="precio">100$</span>  
+                  <span class="precio shoppingCartItemPrice">100$</span>  
                   <a href="#" class="btn btn-primary botonCompra">Comprar</a>
                 </div>
             </div>
         </div>      
     </div>
     <br>
-    <div class="row">
+    <div class="row shoppingCartItem">
       <div class="col">
         <div class="card" style="width: 90%;">
             <img src="./img/raza.png" class="card-img-top alimento-img" alt="...">
             <div class="card-body">
               <h5 class="card-title">Alimento4</h5>
               <p class="card-text"></p>
-              <span class="precio">300$</span>                  
+              <span class="precio shoppingCartItemPrice">300$</span>                  
 
               <a href="#" class="btn btn-primary botonCompra">Comprar</a>
             </div>
@@ -103,7 +103,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Alimento5</h5>
                   <p class="card-text"></p>
-                  <span class="precio">500$</span>                      
+                  <span class="precio shoppingCartItemPrice">500$</span>                      
                   <a href="#" class="btn btn-primary botonCompra">Comprar</a>
                 </div>
               </div>
@@ -114,7 +114,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Alimento6</h5>
                   <p class="card-text"></p>
-                  <span class="precio">200$</span>  
+                  <span class="precio shoppingCartItemPrice ">200$</span>  
                   <a href="#" class="btn btn-primary botonCompra">Comprar</a>
                 </div>
             </div>
@@ -147,7 +147,8 @@
           </tbody>
           
         </table>
-
+<div class="productoEnCarrito">TOTAL=</div>
+<p class="ml-4 mb-0 shoppingCartTotal">0€</p>
         <button id="vaciar-carrito" class="btn btn-primary boton-eliminar " >Vaciar carrito</button>
       </div>
 
@@ -159,7 +160,7 @@
 
 
 
-<script src="indexc.js"></script>
+<script src="./js/indexc.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,18 +1,12 @@
 
-
-
-
-
-
-
 const contenedorProductos = document.getElementById('contenedor-productos');
 
 // Lista de productos con sus propiedades
 
 const productos = [
     {id: 1, nombre: "Dog Chow", precio: 650, img: 'img/dogChow.jpg'},
-    {id: 2, nombre: "Pedigree", precio: 320, img: 'img/pedigree.jpg'},
-    {id: 3, nombre: "Royal Canin", precio: 400, img: 'img/royalCanin.png'},
+    {id: 2, nombre: "Pedigree", precio: 320, img: 'img/dogChow.jpg'},
+    {id: 3, nombre: "Royal Canin", precio: 400, img: 'img/dogChow.jpg'},
 ]
 
 // En el array carrito se guardan los productos agregados al carrito
@@ -39,6 +33,19 @@ const mostrarProductos = () => {
     });
 }
 
+const borrarProductos = () => {
+
+    productos.forEach(producto => {
+        contenedorProductos.innerHTML += `
+            <div class="prod-container">
+                <img src="${producto.img}" />
+                <h2>${producto.nombre}</h2>
+                <p>$${producto.precio}</p>
+                <button id="${producto.id}" class="borrar">Borrar</button>
+            </div>
+        `
+    });
+}
 
 
 /*
@@ -93,27 +100,7 @@ contenedorProductos.addEventListener('click', agregarAlCarrito);
 
 
 
-let nombre_usuario = document.getElementById("nombre_usuario");
 
-
-nombre_usuario.addEventListener("change", function(e){
-
-    console.log(e.target.value);
-
-    if(e.target.value !=="PEPE"){
-        let contenedor = document.getElementById("contenedor");
-        let mensaje = document.createElement("p");
-        mensaje.innerText = "Bienvenido a la veterinaria";
-        contenedor.append(mensaje)
-    }
-    else{
-        let mensaje = document.createElement("p");
-        mensaje.innerText = "Usuario no deseado!";
-        contenedor.append(mensaje)
-    }
-})
-
-contenedor.remove(div);
 
 
 
