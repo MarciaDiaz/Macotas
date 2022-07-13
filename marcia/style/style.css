@@ -70,21 +70,13 @@ h2{
 }
 
 
-.alimento-img {
-    width: 10rem;
-    height: 15rem;
-}
 
-img{
-    height: 100%;
+
+
+
   
-  }
 
-  td{
-    height: 100px;
-  }
-
- h2{
+ .nombre-producto{
    text-align: center;
    color:gray;
  }
@@ -94,11 +86,12 @@ img{
    font-size:20px;
  }
 
- #carrito{
-    width: 100%; 
-    background-color:goldenrod ; 
-    height: auto;
-    border: solid 2px black;
+ .hola{
+    
+     border: solid 2px goldenrod;
+     background-color: aqua;
+     color: gray;
+
  }
   
 #listaProductos{
@@ -109,4 +102,8 @@ img{
 #contenedorPadre{
 
   display:flex;
+}
+
+.pie{
+   text-align: center;
 }
