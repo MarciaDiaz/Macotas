@@ -28,7 +28,7 @@ function rellenarPagina(arrayProductos){
                 <h4 class="card-title nombre-producto">${producto.nombre}</h4>
                 <p class="card-text">$<strong>${producto.precio}</strong></p>
                 <div class="agregar">
-                <a  class="btn btn-outline-secondary anadirAlCarrito ">
+                <a  class="btn btn-outline-secondary anadirAlCarrito">
                 <img height="30" src="./img/carrito+.png" alt="" >Agregar</a>
                 </div>
             </div>
