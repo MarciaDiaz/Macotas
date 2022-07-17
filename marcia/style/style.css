@@ -72,7 +72,10 @@ h2{
 
 
 
-
+.agregar{
+  
+    text-align: center;
+}
 
   
 
@@ -86,14 +89,7 @@ h2{
    font-size:20px;
  }
 
- .hola{
-    
-     border: solid 2px goldenrod;
-     background-color: aqua;
-     color: gray;
 
- }
-  
 #listaProductos{
 
   width: 70%;
@@ -107,3 +103,39 @@ h2{
 .pie{
    text-align: center;
 }
+
+
+
+
+.redesSociales {
+
+ 
+    border: solid 3px aqua;
+    
+    padding: 50px;
+    border-left: 50px;  
+
+   
+}
+.redesSociales div {
+
+    border: solid 2px black;
+    padding: 20px;
+}
+
+
+.navegador  {
+    
+    justify-content: end;
+}
+
+tr th{
+    border:  solid 1px black;
+
+}
+
+.imagenCarrito {
+
+    background-color:goldenrod;
+}
+

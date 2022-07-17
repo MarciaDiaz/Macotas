@@ -12,7 +12,7 @@
 <body>
 
 <nav>
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills navegador">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./paginas/formulario.html">Registrate</a>
         </li>
@@ -20,14 +20,28 @@
           <a class="nav-link" href="./carrito.html">Carrito</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="carritoUbi1">
+          <div class="m-5 pl-5 carritoUbi">
+            <a href="./carrito.html" id = "anchor_carrito" >
+              <img height="45" src="./img/carrito+.png" alt="">
+            
+          </a>
+        </div>
         </li>
         
+        
       </ul>
-      <div class="m-5 pl-5 display-6">
-        <a href="./carrito.html" id = "anchor_carrito" > </a>
-    </div>
+
+     
 </nav>
+
+
+
+
+
+
 <div class="contenido">
     
 
@@ -58,36 +72,30 @@
         
             </div>
         </main>
+        <div> carrito
+          <table class="table  text-center imagenCarrito ">
+          <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th>Subtotal</th>
+                  <th>Eliminar</th>
+              </tr>
+          </thead>
+          <tbody id = "tbody"></tbody>
+        </table>
+      </div>
   
 
-    
-
-    <!-------------CARRITO------------->
-   
-    <table class="table table-danger text-center ">
-      <thead>
-          <tr class="hola">
-            
-              <th>Nombre</th>
-              <th>Precio</th>
-              <th>Cantidad</th>
-              <th>Subtotal</th>
-              <th>Eliminar</th>
-          </tr>
-        
-      </thead>
-      <tbody id = "tbody"></tbody>
-    </table>
-    <div class="m-5 pl-5 display-6"></div>
-  </div>   
-
-
-
-
+</div>
   
+
 <script src="./js/productos.js"></script>
 
 <script src="./js/main.js"></script>
+
+<script src="./js/carrito.js"></script> 
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
@@ -103,9 +111,8 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
   
   <footer class="pie">Adoptar salva vidas</footer>
 
-  <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="./js/carrito.js"></script>
+ 
+
 
 
 </body>

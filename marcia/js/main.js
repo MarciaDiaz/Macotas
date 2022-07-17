@@ -23,11 +23,14 @@ function rellenarPagina(arrayProductos){
 
         div.innerHTML = `
         <div class="card" style="width:400px">
-            <img class="card-img-top alimento-img" src=${producto.img} alt=${producto.id}>
+            <img height="250" class="card-img-top alimento-img" src=${producto.img} alt=${producto.id}>
             <div class="card-body">
                 <h4 class="card-title nombre-producto">${producto.nombre}</h4>
                 <p class="card-text">$<strong>${producto.precio}</strong></p>
-                <a href="#" class="btn btn-primary anadirAlCarrito">Comprar</a>
+                <div class="agregar">
+                <a  class="btn btn-outline-secondary anadirAlCarrito ">
+                <img height="30" src="./img/carrito+.png" alt="" >Agregar</a>
+                </div>
             </div>
         </div>
         `
@@ -46,7 +49,7 @@ function anadirCarrito(e){
     }
 
     let id = e.target.parentNode.parentNode.children[0].alt;
-    let index = carrito.findIndex(producto => producto.id == id)
+    let index = carrito.findIndex(producto => producto.id === id)
     console.log(index)
 
     let nombre =  e.target.parentNode.children[0].textContent;
@@ -54,7 +57,7 @@ function anadirCarrito(e){
     let imagen = e.target.parentNode.parentNode.children[0].src;
     let cantidad = 1;
 
-    if (index == -1){
+    if (index === -1){
         const producto = new ProductoCarrito(nombre, precio, imagen,cantidad, id)
         carrito.push(producto)
     } else{
@@ -83,6 +86,9 @@ function carritoNav(arrayCarrito){
         total += producto.subtotal
     }
     carritoNav.innerHTML = ""
-    carritoNav.innerHTML = `<p>Carrito (${arrayCarrito.length})</p>`
+    carritoNav.innerHTML = `<p>(${arrayCarrito.length})</p>
+                        
+    `
 
 }   
+

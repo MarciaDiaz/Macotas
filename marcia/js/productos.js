@@ -9,7 +9,7 @@ const productos = [
         "precio": 1200,
         "id"  : 2,
         "nombre": "Alimento2",
-        "img": "./img/raza.png",
+        "img": " ./img/raza.png",
     },
     {
         "precio": 1100,
@@ -34,7 +34,27 @@ const productos = [
         "precio": 1050,
         "id"  : 6,
         "nombre": "Alimento6",
-        "img": "./img/purina.png",
+        "img": "./img/royalCanin.png",
+    },
+
+    {
+        "precio": 760,
+        "id"  : 7,
+        "nombre": "Alimento4",
+        "img": "./img/nutrique.png",
+    },
+    {
+        "precio": 1205,
+        "id"  : 8,
+        "nombre": "Alimento5",
+        "img": "./img/ppupi.png",
+    },
+
+    {
+        "precio": 1050,
+        "id"  : 9,
+        "nombre": "Alimento6",
+        "img": "./img/infinity.png",
     }
 
 
