@@ -19,18 +19,18 @@ function rellenarPagina(arrayProductos){
 
     for(let producto of arrayProductos){
         let div = document.createElement("div");
-        div.classList = "col-4 mt-3 row"
+        div.classList = "col-4 mt-3"
 
         div.innerHTML = `
         <div class="card" style="width:400px">
-            <img height="250" class="card-img-top alimento-img" src=${producto.img} alt=${producto.id}>
+            <img  height="230"class="card-img-top alimento-img" src=${producto.img} alt=${producto.id}>
             <div class="card-body">
                 <h4 class="card-title nombre-producto">${producto.nombre}</h4>
                 <p class="card-text">$<strong>${producto.precio}</strong></p>
-                <div class="agregar">
-                <a  class="btn btn-outline-secondary anadirAlCarrito">
-                <img height="30" src="./img/carrito+.png" alt="" >Agregar</a>
-                </div>
+                
+                <a class="btn btn-outline-secondary anadirAlCarrito">
+                <img height="30" src="./img/carrito+.png" alt="" >...</a>
+                
             </div>
         </div>
         `
@@ -86,9 +86,6 @@ function carritoNav(arrayCarrito){
         total += producto.subtotal
     }
     carritoNav.innerHTML = ""
-    carritoNav.innerHTML = `<p>(${arrayCarrito.length})</p>
-                        
-    `
+    carritoNav.innerHTML = `<p>Carrito (${arrayCarrito.length})</p>`
 
 }   
-

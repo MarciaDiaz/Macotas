@@ -14,27 +14,48 @@
 <nav>
     <ul class="nav nav-pills navegador">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./paginas/formulario.html">Registrate</a>
+          <a class="btn-outline-secondary" aria-current="page" href="./paginas/formulario.html">Registrate</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./carrito.html">Carrito</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contacto.html">Contacto</a>
-        </li>
+       
         <li class="carritoUbi1">
-          <div class="m-5 pl-5 carritoUbi">
-            <a href="./carrito.html" id = "anchor_carrito" >
-              <img height="45" src="./img/carrito+.png" alt="">
-            
-          </a>
+          <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <img height="45" href="./carrito.html" src="./img/carrito+.png" alt="">
+          </button>
+        </p>
+        <div class="collapse m-5 pl-5" id="collapseExample">
+          <div class="card card-body">
+            <div> 
+              <table class="table  text-center imagenCarrito ">
+                  <div class="m-5 pl-5 carritoUbi">
+                      <a href="./carrito.html" id = "anchor_carrito" >
+                      
+                      </a>
+                  </div>
+              <thead>
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>
+                      <th>Subtotal</th>
+                      <th>Eliminar</th>
+                  </tr>
+              </thead>
+              <tbody id = "tbody"></tbody>
+            </table>
+          </div>
+          </div>
         </div>
+         
         </li>
         
         
       </ul>
 
      
+      </div>
+
+
+      
 </nav>
 
 
@@ -71,21 +92,7 @@
         <!-- AGREGAR PRODUCTOS -->
         
             </div>
-        </main>
-        <div> carrito
-          <table class="table  text-center imagenCarrito ">
-          <thead>
-              <tr>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Cantidad</th>
-                  <th>Subtotal</th>
-                  <th>Eliminar</th>
-              </tr>
-          </thead>
-          <tbody id = "tbody"></tbody>
-        </table>
-      </div>
+        
   
 
 </div>

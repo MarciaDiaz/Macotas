@@ -9,7 +9,7 @@ const productos = [
         "precio": 1200,
         "id"  : 2,
         "nombre": "Alimento2",
-        "img": " ./img/raza.png",
+        "img": "./img/raza.png",
     },
     {
         "precio": 1100,
@@ -40,20 +40,20 @@ const productos = [
     {
         "precio": 760,
         "id"  : 7,
-        "nombre": "Alimento4",
+        "nombre": "Alimento7",
         "img": "./img/nutrique.png",
     },
     {
         "precio": 1205,
         "id"  : 8,
-        "nombre": "Alimento5",
+        "nombre": "Alimento8",
         "img": "./img/ppupi.png",
     },
 
     {
         "precio": 1050,
         "id"  : 9,
-        "nombre": "Alimento6",
+        "nombre": "Alimento9",
         "img": "./img/infinity.png",
     }
 

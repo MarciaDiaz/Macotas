@@ -1,4 +1,3 @@
-
 let carrito = JSON.parse(localStorage.getItem('carrito'))
 
 let tbody = document.querySelector("#tbody")
@@ -13,7 +12,8 @@ function rellenarCarrito(arrayCarrito){
             <td>${producto.precio}</td> 
             <td>${producto.cantidad}</td> 
             <td>${producto.subtotal}</td> 
-            <td><button class='btn btn-danger eliminarProducto' id = ${producto.id}>Eliminar</button></td>
+            <td><button class='btn btn-danger eliminarProducto' id = ${producto.id}>
+            <img height="30" src="./img/tacho2.png" alt="" ></button></td>
         `
         tbody.appendChild(row)
     }
@@ -37,5 +37,5 @@ botonesEliminar.forEach(boton => {
     boton.addEventListener("click" , eliminarProducto)
 })
 
-////////////////////////////////////////////////////////
+
 
