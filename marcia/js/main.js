@@ -1,3 +1,7 @@
+ 
+Swal.fire('Bienvendio a la tienda de mascotas')
+
+
 let carrito = [];
 
 

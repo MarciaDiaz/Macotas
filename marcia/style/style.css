@@ -3,7 +3,7 @@ nav{
     color: black;
     font-size: x-large;
    
-    padding: 50px;
+    
 }
 
 footer{
@@ -13,7 +13,7 @@ footer{
     padding: 50px;
 }
 
-body{
+.body{
     height: 900px;
    
     
@@ -22,14 +22,13 @@ body{
 h1{
     text-align: center;
     color: goldenrod;
-    
     padding: 50px;    
 }
 
 h2{
     color: black;
     background-color: goldenrod; 
-    width: 200px;
+    
     text-align: center;
 }
 
@@ -51,13 +50,7 @@ h2{
 }
 
 
-.prod-container {
-    text-align: center;
-    display: inline-block;
-    border: 2px solid black;
-    padding: 2rem;
-    margin: 2rem;
-}
+
 
 
 
@@ -80,11 +73,6 @@ h2{
  }
 
 
-#listaProductos{
-
-  width: 70%;
-}
-
 #contenedorPadre{
 
   display:flex;
@@ -100,18 +88,20 @@ h2{
 .redesSociales {
 
  
-    border: solid 3px aqua;
     
-    padding: 50px;
+    text-align: center;
+    padding: 100px;
     border-left: 50px;  
 
    
 }
-.redesSociales div {
+.redesSociales a {
 
-    border: solid 2px black;
-    padding: 20px;
+    
+    padding: 5px;
+    
 }
+
 
 
 .navegador  {
@@ -122,10 +112,5 @@ h2{
 tr th{
     border:  solid 1px black;
 
-}
-
-.imagenCarrito {
-
-    background-color:goldenrod;
 }
 

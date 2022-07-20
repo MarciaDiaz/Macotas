@@ -31,10 +31,14 @@ const eliminarProducto = (e) => {
 
 rellenarCarrito(carrito)
 
+
+
 let botonesEliminar = document.querySelectorAll(".eliminarProducto")
 
 botonesEliminar.forEach(boton => {
-    boton.addEventListener("click" , eliminarProducto)
+  
+     boton.addEventListener("click", eliminarProducto)
+
 })
 
 
